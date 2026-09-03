@@ -1,1 +1,286 @@
-<!DOCTYPE html><html lang='pt-BR'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Entrega a Combinar</title><style>*{margin:0;padding:0;box-sizing:border-box}body{background:transparent;font-family:Arial,sans-serif}.banner{border:2px solid #00C7CF;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 8px 20px rgba(0,0,0,.08)}.topo{background:linear-gradient(90deg,#00C7CF,#00AEB7);padding:14px 16px;color:#fff}.topo h2{font-size:18px;font-weight:800;margin-bottom:4px}.topo p{font-size:12px;color:#DFFDFE}.conteudo{padding:16px}.conteudo p{font-size:13px;color:#444;line-height:1.6;margin-bottom:14px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}.tag{background:#F2FEFE;border:1px solid #BDEFF1;color:#008D94;padding:6px 10px;border-radius:20px;font-size:11px;font-weight:700}.aviso{background:#F8FEFE;border-left:4px solid #00C7CF;padding:12px;border-radius:10px;margin-bottom:16px;font-size:12px;color:#333;line-height:1.5}.botao{display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(90deg,#25D366,#18B955);color:#fff;text-decoration:none;padding:14px;border-radius:12px;font-weight:800;font-size:14px}.rodape{margin-top:14px;padding-top:12px;border-top:1px solid #EAF7F8;text-align:center;color:#777;font-size:11px}</style></head><body><div class='banner'><div class='topo'><h2>🚚 ENTREGA A COMBINAR</h2><p>Receba seu pedido da forma mais prática, rápida e segura.</p></div><div class='conteudo'><p>Após a confirmação do pagamento, nossa equipe entrará em contato para combinar a entrega do seu pedido, definindo o melhor local, dia e horário para você.</p><div class='tags'><span class='tag'>📍 Entrega Personalizada</span><span class='tag'>📅 Horário Agendado</span><span class='tag'>💬 Atendimento Rápido</span></div><div class='aviso'><strong>Importante:</strong><br>Se desejar agilizar sua entrega ou tiver qualquer dúvida, fale diretamente com nossa equipe pelo WhatsApp.</div><a class='botao' href='https://wa.me/5531983779028?text=Olá%20Nível%20Print!%20Escolhi%20Entrega%20a%20Combinar%20e%20gostaria%20de%20combinar%20a%20minha%20entrega.'>💬 FALAR COM A NÍVEL PRINT</a><div class='rodape'>Atendimento rápido • Entrega personalizada • Nível Print</div></div></div></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrega a Combinar | Nível Print</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    min-height:100%;
+}
+
+body{
+    background:transparent;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#222;
+}
+
+/* CARD PRINCIPAL — compacto para não empurrar o rodapé */
+.entrega-card{
+    width:100%;
+    max-width:680px;
+    margin:10px auto 8px;
+    background:#fff;
+    border:1px solid #dce7e8;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,.07);
+}
+
+/* CABEÇALHO */
+.entrega-topo{
+    display:flex;
+    align-items:center;
+    gap:13px;
+    padding:12px 17px;
+    background:linear-gradient(135deg,#071211 0%,#101c1b 100%);
+    border-bottom:3px solid #00c7cf;
+}
+
+.entrega-icone{
+    width:40px;
+    height:40px;
+    flex:0 0 40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:11px;
+    background:rgba(0,199,207,.12);
+    border:1px solid rgba(0,199,207,.45);
+    color:#00c7cf;
+    font-size:20px;
+}
+
+.entrega-topo h1{
+    color:#fff;
+    font-size:17px;
+    line-height:1.15;
+    font-weight:800;
+    letter-spacing:.1px;
+}
+
+.entrega-topo p{
+    margin-top:3px;
+    color:#b9c9c9;
+    font-size:11.5px;
+    line-height:1.35;
+}
+
+/* CONTEÚDO */
+.entrega-conteudo{
+    padding:13px 17px 14px;
+}
+
+.entrega-texto{
+    color:#4a5555;
+    font-size:12.5px;
+    line-height:1.5;
+    margin-bottom:10px;
+}
+
+/* INFORMAÇÕES */
+.entrega-info{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:7px;
+    margin-bottom:11px;
+}
+
+.entrega-tag{
+    min-height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    padding:7px 8px;
+    background:#f6fbfb;
+    border:1px solid #dceff0;
+    border-radius:9px;
+    color:#087f85;
+    font-size:10.5px;
+    font-weight:700;
+    text-align:center;
+}
+
+/* AVISO */
+.entrega-aviso{
+    display:flex;
+    align-items:flex-start;
+    gap:9px;
+    padding:9px 11px;
+    margin-bottom:11px;
+    background:#f7fbfb;
+    border-left:3px solid #00c7cf;
+    border-radius:7px;
+    color:#4a5555;
+    font-size:11px;
+    line-height:1.4;
+}
+
+.entrega-aviso-icone{
+    color:#00aeb7;
+    font-size:15px;
+    line-height:1;
+}
+
+.entrega-aviso strong{
+    color:#252d2d;
+}
+
+/* BOTÕES */
+.entrega-acoes{
+    display:flex;
+    gap:8px;
+}
+
+.entrega-botao{
+    flex:1;
+    min-height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+    padding:9px 12px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:11.5px;
+    font-weight:800;
+    transition:.2s ease;
+}
+
+.entrega-whatsapp{
+    background:#20bf61;
+    color:#fff;
+}
+
+.entrega-whatsapp:hover{
+    background:#18aa55;
+    transform:translateY(-1px);
+}
+
+.entrega-loja{
+    background:#fff;
+    color:#333;
+    border:1px solid #cfdada;
+}
+
+.entrega-loja:hover{
+    border-color:#00c7cf;
+    color:#008d94;
+}
+
+/* RODAPÉ INTERNO */
+.entrega-rodape{
+    margin-top:10px;
+    padding-top:8px;
+    border-top:1px solid #edf2f2;
+    text-align:center;
+    color:#8a9494;
+    font-size:9.5px;
+}
+
+/* RESPONSIVO */
+@media (max-width:600px){
+    .entrega-card{
+        margin:7px auto 6px;
+        border-radius:12px;
+    }
+
+    .entrega-topo{
+        padding:11px 13px;
+    }
+
+    .entrega-conteudo{
+        padding:11px 13px 12px;
+    }
+
+    .entrega-info{
+        grid-template-columns:1fr;
+    }
+
+    .entrega-tag{
+        min-height:34px;
+    }
+
+    .entrega-acoes{
+        flex-direction:column;
+    }
+
+    .entrega-botao{
+        min-height:36px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="entrega-card">
+
+    <div class="entrega-topo">
+        <div class="entrega-icone">🚚</div>
+        <div>
+            <h1>Entrega a Combinar</h1>
+            <p>Combine com nossa equipe a melhor forma de receber seu pedido.</p>
+        </div>
+    </div>
+
+    <div class="entrega-conteudo">
+
+        <p class="entrega-texto">
+            Após a confirmação do pagamento, a equipe da <strong>Nível Print</strong>
+            entrará em contato para definir com você o melhor local, dia e horário
+            para a entrega.
+        </p>
+
+        <div class="entrega-info">
+            <div class="entrega-tag">📍 Entrega personalizada</div>
+            <div class="entrega-tag">📅 Horário agendado</div>
+            <div class="entrega-tag">💬 Atendimento rápido</div>
+        </div>
+
+        <div class="entrega-aviso">
+            <span class="entrega-aviso-icone">✓</span>
+            <div>
+                <strong>Precisa agilizar?</strong>
+                Fale diretamente com nossa equipe pelo WhatsApp para combinar sua entrega.
+            </div>
+        </div>
+
+        <div class="entrega-acoes">
+            <a
+                class="entrega-botao entrega-whatsapp"
+                href="https://wa.me/5531983779028?text=Ol%C3%A1%20N%C3%ADvel%20Print!%20Escolhi%20Entrega%20a%20Combinar%20e%20gostaria%20de%20combinar%20a%20minha%20entrega."
+                target="_blank"
+                rel="noopener"
+            >
+                💬 Falar com a Nível Print
+            </a>
+
+            <a
+                class="entrega-botao entrega-loja"
+                href="https://www.nivelprint.com.br/"
+                target="_blank"
+                rel="noopener"
+            >
+                🛍️ Voltar para a loja
+            </a>
+        </div>
+
+        <div class="entrega-rodape">
+            Nível Print • Atendimento personalizado • Impressão profissional
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
